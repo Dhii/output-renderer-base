@@ -28,10 +28,10 @@ class RendererExceptionTest extends TestCase
      *
      * @return TestSubject The new instance of the test subject.
      */
-    public function createInstance($message = null, $code = 0, $previous = null, $container = null)
+    public function createInstance($message = null, $code = 0, $previous = null, $renderer = null)
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                ->new($message, $code, $previous, $container);
+                ->new($message, $code, $previous, $renderer);
 
         return $mock;
     }
