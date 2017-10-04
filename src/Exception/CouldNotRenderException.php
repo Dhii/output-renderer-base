@@ -14,7 +14,7 @@ use Dhii\Exception\CreateInvalidArgumentExceptionCapableTrait;
  *
  * @since [*next-version*]
  */
-class CouldNotRenderException extends RootException implements RendererExceptionInterface
+class CouldNotRenderException extends RootException implements CouldNotRenderExceptionInterface
 {
     /*
      * Adds internal renderer awareness.
