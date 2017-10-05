@@ -78,7 +78,7 @@ class AbstractBaseBlockTest extends TestCase
         $code = rand(1, 100);
         $innerException = $this->createException();
 
-        $result = $_subject->_createException($message, $code, $innerException);
+        $result = $_subject->_createRendererException($message, $code, $innerException);
 
         $this->assertInstanceOf('Dhii\Output\Exception\RendererExceptionInterface', $result,
             'The created message does not implement required interface');
