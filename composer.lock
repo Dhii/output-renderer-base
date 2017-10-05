@@ -47,7 +47,7 @@
                 }
             ],
             "description": "Standards-compliant exception classes",
-            "time": "2017-09-05 08:24:01"
+            "time": "2017-09-05T08:24:01+00:00"
         },
         {
             "name": "dhii/exception-helper-base",
@@ -94,7 +94,7 @@
                 }
             ],
             "description": "Base functionality for exception helpers",
-            "time": "2017-09-05 07:47:07"
+            "time": "2017-09-05T07:47:07+00:00"
         },
         {
             "name": "dhii/exception-interface",
@@ -180,7 +180,7 @@
                 }
             ],
             "description": "A base for internationalization consumers",
-            "time": "2017-08-24 07:54:03"
+            "time": "2017-08-24T07:54:03+00:00"
         },
         {
             "name": "dhii/i18n-interface",
@@ -232,12 +232,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/output-renderer-abstract.git",
-                "reference": "f2c88baf4863aff4e4ec3cb9b090b3dc24d486fe"
+                "reference": "297548aae00d6f57bd779dfcaf22f3fbb02124bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/output-renderer-abstract/zipball/f2c88baf4863aff4e4ec3cb9b090b3dc24d486fe",
-                "reference": "f2c88baf4863aff4e4ec3cb9b090b3dc24d486fe",
+                "url": "https://api.github.com/repos/Dhii/output-renderer-abstract/zipball/297548aae00d6f57bd779dfcaf22f3fbb02124bc",
+                "reference": "297548aae00d6f57bd779dfcaf22f3fbb02124bc",
                 "shasum": ""
             },
             "require": {
@@ -270,7 +270,7 @@
                 }
             ],
             "description": "Common abstract functionality for output renderers.",
-            "time": "2017-10-04 14:18:46"
+            "time": "2017-10-05T14:02:58+00:00"
         },
         {
             "name": "dhii/output-renderer-interface",
