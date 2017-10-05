@@ -61,4 +61,14 @@ abstract class AbstractBaseBlock extends AbstractBlock implements BlockInterface
     ) {
         return new CouldNotRenderException($message, $code, $previous, $this);
     }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @since [*next-version*]
+     */
+    public function render()
+    {
+        return $this->_render();
+    }
 }
