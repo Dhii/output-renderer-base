@@ -50,9 +50,14 @@ abstract class AbstractBaseTemplate extends AbstractTemplate implements Template
     }
 
     /**
-     * {@inheritdoc}
+     * Creates a new template rendering exception.
      *
      * @since [*next-version*]
+     *
+     * @param string|Stringable  $message  The error message, if any.
+     * @param int|null           $code     The error code, if any.
+     * @param RootException|null $previous The inner exception, if any.
+     * @param mixed|null         $context  The rendering context, if any.
      *
      * @return TemplateRenderException The new exception.
      */
@@ -60,9 +65,9 @@ abstract class AbstractBaseTemplate extends AbstractTemplate implements Template
         $message = null,
         $code = null,
         RootException $previous = null,
-        $container = null
+        $context = null
     ) {
-        return new TemplateRenderException($message, $code, $previous, $this, $container);
+        return new TemplateRenderException($message, $code, $previous, $this, $context);
     }
 
     /**
