@@ -27,10 +27,10 @@ class AbstractBaseTemplateTest extends TestCase
      *
      * @return TestSubject The new instance of the test subject.
      */
-    public function createInstance()
+    public function createInstance($renderResult = null)
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                ->_renderWithContext()
+                ->_renderWithContext($renderResult)
                 ->_validateContext()
                 ->_normalizeContext($this->returnArgument(0))
                 ->new();
