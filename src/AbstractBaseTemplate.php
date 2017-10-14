@@ -10,7 +10,7 @@ use Dhii\I18n\StringTranslatingTrait;
 use Dhii\Exception\CreateInvalidArgumentExceptionCapableTrait;
 
 /**
- * Base concrete functionality for blocks.
+ * Base concrete functionality for templates.
  *
  * @since [*next-version*]
  */

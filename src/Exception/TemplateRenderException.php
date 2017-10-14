@@ -12,7 +12,7 @@ use Dhii\I18n\StringTranslatingTrait;
 use Dhii\Exception\CreateInvalidArgumentExceptionCapableTrait;
 
 /**
- * An exception that occurs when a renderer cannot produce output.
+ * An exception that occurs when a template cannot produce output.
  *
  * @since [*next-version*]
  */
