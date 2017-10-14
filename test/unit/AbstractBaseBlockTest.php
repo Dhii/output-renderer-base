@@ -111,4 +111,21 @@ class AbstractBaseBlockTest extends TestCase
         $this->assertEquals($innerException, $result->getPrevious(), 'The result inner exception is wrong');
         $this->assertEquals($subject, $result->getRenderer(), 'The result renderer is wrong');
     }
+
+    /**
+     * Tests that the subject correctly produces output on exception.
+     *
+     * @since [*next-version*]
+     */
+    public function testRenderOnException()
+    {
+        $subject = $this->createInstance();
+        $_subject = $this->reflect($subject);
+
+        $innerException = $this->createException();
+
+        $result = $_subject->_renderOnException($innerException);
+
+        $this->assertInternalType('string', $result, 'Returned value must be a string');
+    }
 }
