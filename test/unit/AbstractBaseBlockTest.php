@@ -131,4 +131,17 @@ class AbstractBaseBlockTest extends TestCase
 
         $this->assertInternalType('string', $result, 'Returned value must be a string');
     }
+
+    /**
+     * Tests that the subject correctly produces output during normal operation.
+     *
+     * @since [*next-version*]
+     */
+    public function testRender()
+    {
+        $subject = $this->createInstance(uniqid('render-result-'));
+        $result = $subject->render();
+
+        $this->assertInternalType('string', $result, 'Returned value must be a string');
+    }
 }
