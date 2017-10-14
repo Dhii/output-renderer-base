@@ -87,4 +87,28 @@ class AbstractBaseBlockTest extends TestCase
         $this->assertEquals($innerException, $result->getPrevious(), 'The result inner exception is wrong');
         $this->assertEquals($subject, $result->getRenderer(), 'The result renderer is wrong');
     }
+
+    /**
+     * Tests that the subject correctly creates a could not render exception.
+     *
+     * @since [*next-version*]
+     */
+    public function testCreateCouldNotRenderException()
+    {
+        $subject = $this->createInstance();
+        $_subject = $this->reflect($subject);
+
+        $message = uniqid('message-');
+        $code = rand(1, 100);
+        $innerException = $this->createException();
+
+        $result = $_subject->_createCouldNotRenderException($message, $code, $innerException);
+
+        $this->assertInstanceOf('Dhii\Output\Exception\CouldNotRenderExceptionInterface', $result,
+            'The created message does not implement required interface');
+        $this->assertEquals($message, $result->getMessage(), 'The result message is wrong');
+        $this->assertEquals($code, $result->getCode(), 'The result code is wrong');
+        $this->assertEquals($innerException, $result->getPrevious(), 'The result inner exception is wrong');
+        $this->assertEquals($subject, $result->getRenderer(), 'The result renderer is wrong');
+    }
 }
