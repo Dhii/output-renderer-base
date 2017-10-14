@@ -25,12 +25,15 @@ class AbstractBaseBlockTest extends TestCase
      *
      * @since [*next-version*]
      *
+     * @param null|string|mixed|callable $renderResult The rendering result that should be produced by the subject.
+     *                                                 If callable is supplied, its return value will be used.
+     *
      * @return TestSubject The new instance of the test subject.
      */
-    public function createInstance()
+    public function createInstance($renderResult = null)
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                ->_render()
+                ->_render($renderResult)
                 ->new();
 
         return $mock;
