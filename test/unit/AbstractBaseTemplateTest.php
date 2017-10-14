@@ -113,6 +113,32 @@ class AbstractBaseTemplateTest extends TestCase
     }
 
     /**
+     * Tests that the subject correctly creates a template exception.
+     *
+     * @since [*next-version*]
+     */
+    public function testCreateTemplateException()
+    {
+        $subject = $this->createInstance();
+        $_subject = $this->reflect($subject);
+
+        $message = uniqid('message-');
+        $code = rand(1, 100);
+        $innerException = $this->createException();
+        $context = $this->createContext();
+
+        $result = $_subject->_createTemplateException($message, $code, $innerException, $context);
+
+        $this->assertInstanceOf('Dhii\Output\Exception\TemplateRenderExceptionInterface', $result,
+            'The created message does not implement required interface');
+        $this->assertEquals($message, $result->getMessage(), 'The result message is wrong');
+        $this->assertEquals($code, $result->getCode(), 'The result code is wrong');
+        $this->assertEquals($innerException, $result->getPrevious(), 'The result inner exception is wrong');
+        $this->assertEquals($subject, $result->getRenderer(), 'The result renderer is wrong');
+        $this->assertEquals($context, $result->getContext(), 'The result renderer is wrong');
+    }
+
+    /**
      * Tests that the subject correctly produces output during normal operation.
      *
      * @since [*next-version*]
