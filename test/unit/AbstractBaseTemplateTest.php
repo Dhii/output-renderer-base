@@ -5,6 +5,7 @@ namespace Dhii\Output\FuncTest\Exception;
 use Xpmock\TestCase;
 use Exception as RootException;
 use Dhii\Output\AbstractBaseTemplate as TestSubject;
+use Psr\Container\ContainerInterface;
 
 /**
  * Tests {@see TestSubject}.
@@ -64,6 +65,27 @@ class AbstractBaseTemplateTest extends TestCase
     public function createException($message = null, $code = null, RootException $previous = null)
     {
         return new RootException($message, $code, $previous);
+    }
+
+    /**
+     * Creates a new context.
+     *
+     * @since [*next-version*]
+     *
+     * @param array $values The values for the context.
+     *
+     * @return ContainerInterface The new context.
+     */
+    public function createContext(array $values = [])
+    {
+        $mock = $this->mock('Psr\Container\ContainerInterface')
+                ->get(function ($key) use ($values) {
+                    return isset($values[$key]) ? $values[$key] : null;
+                })
+                ->has(true)
+                ->new();
+
+        return $mock;
     }
 
     /**
