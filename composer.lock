@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d1f1e4b033d3cb786eec0cea4f5a6291",
+    "content-hash": "456727c2767b25a3889407f192a32d34",
     "packages": [
         {
             "name": "dhii/exception",
@@ -302,12 +302,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/output-renderer-abstract.git",
-                "reference": "6063843b7dd339fa680d59311f537d8e0bdafaae"
+                "reference": "429c38db7c32bbb8e51fbd1ce490280f5edf6c40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/output-renderer-abstract/zipball/6063843b7dd339fa680d59311f537d8e0bdafaae",
-                "reference": "6063843b7dd339fa680d59311f537d8e0bdafaae",
+                "url": "https://api.github.com/repos/Dhii/output-renderer-abstract/zipball/429c38db7c32bbb8e51fbd1ce490280f5edf6c40",
+                "reference": "429c38db7c32bbb8e51fbd1ce490280f5edf6c40",
                 "shasum": ""
             },
             "require": {
@@ -345,7 +345,7 @@
                 }
             ],
             "description": "Common abstract functionality for output renderers.",
-            "time": "2018-01-10T19:12:37+00:00"
+            "time": "2018-01-11T14:41:21+00:00"
         },
         {
             "name": "dhii/output-renderer-interface",
