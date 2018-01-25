@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "456727c2767b25a3889407f192a32d34",
+    "content-hash": "d48894b5129b86922435e8ec30596734",
     "packages": [
         {
             "name": "dhii/exception",
@@ -302,16 +302,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/output-renderer-abstract.git",
-                "reference": "429c38db7c32bbb8e51fbd1ce490280f5edf6c40"
+                "reference": "505c8411cb870b48df4c3685a4f2c5ef514c1eea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/output-renderer-abstract/zipball/429c38db7c32bbb8e51fbd1ce490280f5edf6c40",
-                "reference": "429c38db7c32bbb8e51fbd1ce490280f5edf6c40",
+                "url": "https://api.github.com/repos/Dhii/output-renderer-abstract/zipball/505c8411cb870b48df4c3685a4f2c5ef514c1eea",
+                "reference": "505c8411cb870b48df4c3685a4f2c5ef514c1eea",
                 "shasum": ""
             },
             "require": {
-                "dhii/output-renderer-interface": "^0.2",
+                "dhii/output-renderer-interface": "^0.2 | ^0.3",
                 "php": "^5.4 | ^7.0",
                 "psr/container": "^1.0"
             },
@@ -345,7 +345,7 @@
                 }
             ],
             "description": "Common abstract functionality for output renderers.",
-            "time": "2018-01-11T14:41:21+00:00"
+            "time": "2018-01-24T17:04:23+00:00"
         },
         {
             "name": "dhii/output-renderer-interface",
@@ -353,12 +353,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/output-renderer-interface.git",
-                "reference": "a37a080c3cc60607846f0f6fe4bf544544a9f6ba"
+                "reference": "7481185f3ee06eacaec951504c96b1d4ee06d7bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/output-renderer-interface/zipball/a37a080c3cc60607846f0f6fe4bf544544a9f6ba",
-                "reference": "a37a080c3cc60607846f0f6fe4bf544544a9f6ba",
+                "url": "https://api.github.com/repos/Dhii/output-renderer-interface/zipball/7481185f3ee06eacaec951504c96b1d4ee06d7bc",
+                "reference": "7481185f3ee06eacaec951504c96b1d4ee06d7bc",
                 "shasum": ""
             },
             "require": {
@@ -370,12 +370,13 @@
                 "codeclimate/php-test-reporter": "dev-master",
                 "dhii/php-cs-fixer-config": "dev-php-5.3",
                 "phpunit/phpunit": "4.*",
+                "psr/container": "^1.0",
                 "ptrofimov/xpmock": "^1.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.2.x-dev"
+                    "dev-develop": "0.3.x-dev"
                 }
             },
             "autoload": {
@@ -394,7 +395,7 @@
                 }
             ],
             "description": "An interface for objects that can perform rendering.",
-            "time": "2018-01-10T18:57:26+00:00"
+            "time": "2018-01-11T16:13:43+00:00"
         },
         {
             "name": "dhii/stringable-interface",
