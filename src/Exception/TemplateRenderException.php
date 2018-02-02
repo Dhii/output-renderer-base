@@ -2,6 +2,8 @@
 
 namespace Dhii\Output\Exception;
 
+use ArrayAccess;
+use Dhii\Data\Container\NormalizeContainerCapableTrait;
 use Exception as RootException;
 use Dhii\Util\String\StringableInterface as Stringable;
 use Psr\Container\ContainerInterface;
@@ -10,6 +12,7 @@ use Dhii\Output\RendererAwareTrait;
 use Dhii\Output\ContextAwareTrait;
 use Dhii\I18n\StringTranslatingTrait;
 use Dhii\Exception\CreateInvalidArgumentExceptionCapableTrait;
+use stdClass;
 
 /**
  * An exception that occurs when a template cannot produce output.
@@ -48,14 +51,23 @@ class TemplateRenderException extends RootException implements TemplateRenderExc
      */
     use CreateInvalidArgumentExceptionCapableTrait;
 
+    /*
+     * Adds container normalization capabilities.
+     *
+     * @since [*next-version*]
+     */
+    use NormalizeContainerCapableTrait;
+
     /**
+     * Constructor.
+     *
      * @since [*next-version*]
      *
-     * @param string|Stringable|null  $message  The error message, if any.
-     * @param int|null                $code     The error code, if any.
-     * @param RootException|null      $previous The inner exception, if any.
-     * @param TemplateInterface|null  $renderer The associated renderer, if any.
-     * @param ContainerInterface|null $context  The associated context, if any.
+     * @param string|Stringable|null                             $message  The error message, if any.
+     * @param int|null                                           $code     The error code, if any.
+     * @param RootException|null                                 $previous The inner exception, if any.
+     * @param TemplateInterface|null                             $renderer The associated renderer, if any.
+     * @param array|ArrayAccess|stdClass|ContainerInterface|null $context  The associated context, if any.
      */
     public function __construct($message = null, $code = null, RootException $previous = null, TemplateInterface $renderer = null, $context = null)
     {
