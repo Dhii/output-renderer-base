@@ -8,7 +8,6 @@
       <path value="$PROJECT_DIR$/vendor/codeclimate/php-test-reporter" />
       <path value="$PROJECT_DIR$/vendor/dhii/i18n-helper-base" />
       <path value="$PROJECT_DIR$/vendor/dhii/exception-interface" />
-      <path value="$PROJECT_DIR$/vendor/dhii/exception-helper-base" />
       <path value="$PROJECT_DIR$/vendor/dhii/normalization-helper-base" />
       <path value="$PROJECT_DIR$/vendor/dhii/stringable-interface" />
       <path value="$PROJECT_DIR$/vendor/dhii/output-renderer-interface" />
@@ -47,6 +46,7 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
       <path value="$PROJECT_DIR$/vendor/dhii/i18n-interface" />
       <path value="$PROJECT_DIR$/vendor/dhii/exception" />
+      <path value="$PROJECT_DIR$/vendor/dhii/container-helper-base" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="5.4.0" />
