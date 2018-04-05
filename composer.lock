@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1abbceac3a502413df1c40b45ef4b154",
+    "content-hash": "7c6a597d16c37d1de4c273d29ab7382a",
     "packages": [
         {
             "name": "dhii/container-helper-base",
@@ -299,16 +299,16 @@
         },
         {
             "name": "dhii/output-renderer-abstract",
-            "version": "dev-develop",
+            "version": "v0.1-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/output-renderer-abstract.git",
-                "reference": "505c8411cb870b48df4c3685a4f2c5ef514c1eea"
+                "reference": "a72d44d362e3a186a852896ca4d34214e15a2389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/output-renderer-abstract/zipball/505c8411cb870b48df4c3685a4f2c5ef514c1eea",
-                "reference": "505c8411cb870b48df4c3685a4f2c5ef514c1eea",
+                "url": "https://api.github.com/repos/Dhii/output-renderer-abstract/zipball/a72d44d362e3a186a852896ca4d34214e15a2389",
+                "reference": "a72d44d362e3a186a852896ca4d34214e15a2389",
                 "shasum": ""
             },
             "require": {
@@ -318,11 +318,14 @@
             },
             "require-dev": {
                 "codeclimate/php-test-reporter": "<=0.3.2",
-                "dhii/exception-interface": "^0.1",
+                "dhii/exception-interface": "^0.1 | ^0.2-alpha1",
                 "dhii/php-cs-fixer-config": "^0.1",
-                "dhii/validation-interface": "dev-develop",
+                "dhii/validation-interface": "^0.1 | ^0.2-alpha1",
                 "phpunit/phpunit": "^4.8",
                 "ptrofimov/xpmock": "^1.1"
+            },
+            "suggest": {
+                "dhii/container-helper-base": "For normalizing context containers"
             },
             "type": "library",
             "extra": {
@@ -346,20 +349,20 @@
                 }
             ],
             "description": "Common abstract functionality for output renderers.",
-            "time": "2018-01-24T17:04:23+00:00"
+            "time": "2018-04-05T13:16:55+00:00"
         },
         {
             "name": "dhii/output-renderer-interface",
-            "version": "dev-develop",
+            "version": "v0.3-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/output-renderer-interface.git",
-                "reference": "7481185f3ee06eacaec951504c96b1d4ee06d7bc"
+                "reference": "2786204ad6b9b79e5f4485aedd700016c13f6668"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/output-renderer-interface/zipball/7481185f3ee06eacaec951504c96b1d4ee06d7bc",
-                "reference": "7481185f3ee06eacaec951504c96b1d4ee06d7bc",
+                "url": "https://api.github.com/repos/Dhii/output-renderer-interface/zipball/2786204ad6b9b79e5f4485aedd700016c13f6668",
+                "reference": "2786204ad6b9b79e5f4485aedd700016c13f6668",
                 "shasum": ""
             },
             "require": {
@@ -373,6 +376,9 @@
                 "phpunit/phpunit": "4.*",
                 "psr/container": "^1.0",
                 "ptrofimov/xpmock": "^1.1"
+            },
+            "suggest": {
+                "dhii/container-helper-base": "Useful for reading data from different context types uniformly"
             },
             "type": "library",
             "extra": {
@@ -396,7 +402,7 @@
                 }
             ],
             "description": "An interface for objects that can perform rendering.",
-            "time": "2018-01-11T16:13:43+00:00"
+            "time": "2018-04-05T09:39:21+00:00"
         },
         {
             "name": "dhii/stringable-interface",

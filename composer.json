@@ -13,8 +13,8 @@
     "prefer-stable": true,
     "require": {
         "php": "^5.4 | ^7.0",
-        "dhii/output-renderer-interface": "^0.2 | ^0.3",
-        "dhii/output-renderer-abstract": "^0.1",
+        "dhii/output-renderer-interface": "^0.2 | ^0.3-alpha1",
+        "dhii/output-renderer-abstract": "^0.1-alpha1",
         "dhii/exception": "^0.1-alpha4",
         "dhii/container-helper-base": "^0.1-alpha5",
         "dhii/i18n-helper-base": "^0.1-alpha1"
